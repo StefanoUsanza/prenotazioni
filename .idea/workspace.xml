@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b927ecb-8f45-457e-a793-28b8386fb8cf" name="Default Changelist" comment="" />
+    <list default="true" id="9b927ecb-8f45-457e-a793-28b8386fb8cf" name="Default Changelist" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prenota.php" beforeDir="false" afterPath="$PROJECT_DIR$/prenota.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +12,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,9 +26,29 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="PHP Script.prenota.php">
+    <configuration name="prenota.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/prenotazioni/prenota.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="prenota.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/prenota.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP_7.4.10" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.prenota.php" />
+        <item itemvalue="JavaScript Debug.prenota.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -32,14 +58,54 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615021636876</updated>
-      <workItem from="1615021638564" duration="1664000" />
+      <workItem from="1615021638564" duration="6273000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1615024950673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615024950673</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="272" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615029516591">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1615029516591" />
+    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1615027459357">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1615027459357" />
+    <state width="634" height="178" key="GridCell.Tab.0.bottom" timestamp="1615029857922">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="178" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1615029857922" />
+    <state width="634" height="178" key="GridCell.Tab.0.center" timestamp="1615029857922">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="178" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1615029857922" />
+    <state width="634" height="178" key="GridCell.Tab.0.left" timestamp="1615029857922">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="178" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1615029857922" />
+    <state width="634" height="178" key="GridCell.Tab.0.right" timestamp="1615029857922">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="178" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1615029857922" />
+    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1615029499776">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1360.728@0.0.1360.728" timestamp="1615029499776" />
     <state x="797" y="291" key="NewPhpFileDialog" timestamp="1615021655723">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -48,5 +114,9 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="471" y="66" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1615024120403" />
+    <state x="544" y="100" key="Vcs.Push.Dialog.v2" timestamp="1615025386906">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="544" y="100" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1615025386906" />
   </component>
 </project>
