@@ -41,14 +41,13 @@ $codice_prenotazione = random_str();
 $stmt = $pdo->query("select count(*) as n_prenotazioni from prenotazioni
 where giorno='$giorno'");
 
-$prenotazioni_MAX=3;
 $n_prenotazioni=0;
 
 while($row =$stmt->fetch(PDO::FETCH_ASSOC)){
     $n_prenotazioni = $row['n_prenotazioni'];
 }
 
-if($n_prenotazioni>=$prenotazioni_MAX) {
+if($n_prenotazioni>=$prenotazioni_max) {
     echo $template->render('prenotazioni_max');
 }
 else {
@@ -67,6 +66,7 @@ else {
         ]
     );
 
-    header('location:lista_prenotazioni.php');
+    //header('location:lista_prenotazioni.php');
+    echo $template->render('qr_code', ['codice'=>$codice_prenotazione]);
     exit(0);
 }
