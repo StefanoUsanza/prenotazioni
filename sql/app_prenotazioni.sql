@@ -26,8 +26,11 @@ CREATE TABLE `prenotazioni` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `codice_fiscale` varchar(16) NOT NULL,
   `giorno` date NOT NULL,
+  `codice_prenotazione` varchar(45) NOT NULL,
+  `eseguito` tinyint(1) NOT NULL DEFAULT 0,
+  `note` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +39,7 @@ CREATE TABLE `prenotazioni` (
 
 LOCK TABLES `prenotazioni` WRITE;
 /*!40000 ALTER TABLE `prenotazioni` DISABLE KEYS */;
-INSERT INTO `prenotazioni` VALUES (1,'BGTLSN71H19B157G','2021-01-01'),(2,'SDFR45','2021-09-03'),(7,'AAA','2021-09-02'),(8,'bbb','2021-09-02'),(9,'ccc','2021-09-02'),(10,'serjgf','2021-09-01'),(11,'qwer','2021-09-01'),(12,'awrrt','2021-03-13'),(13,'po','2021-03-01');
+INSERT INTO `prenotazioni` VALUES (44,'uiui','2021-03-23','cgmjBmu1Ul7BHAUjSdg5MHgEWowUal7TqeRBFT9tqhRrj',0,NULL),(45,'wer','2021-03-23','bsc6QRS6IWKMSBte9X7FxsXELDtuOdrcCIMaDpMcpFlZ1',0,NULL),(46,'opp','2021-03-24','EOAeBuJbd1CmMGrKYzTdAywuatBafMkRfhAyB4c9AJsSn',0,NULL),(47,'er','2021-03-22','8oD6pWGVc3tZXm5qc0K1bCmAxFvDcXR2bN7H2vNA6LJKI',0,NULL),(49,'tyuu','2021-03-23','Dhi0dWfSkiKwPJyksE6k3jTjoiRuCykrZu2MleQ4NzCJz',0,NULL),(50,'uio','2021-03-03','ZIFFYcZ77cGUeBoDHzW4ftQ53qn16UFmKcMa3JaJ7HMf2',0,NULL),(51,'op','2021-03-21','PNmaQhklnZOPHr8kXSqTvpGUMt45MwQeJePMBQERTDEEu',0,NULL),(52,'op','2021-03-21','0yFNHgjwOoaOvoOPI7qOaYdHsNTNmRt503fXEixvJvGom',0,NULL),(53,'op','2021-03-21','UmUOlBPoSLTEsbnvNk1mmdCX7v2IklERkiWI46LGTtcKp',0,NULL),(54,'op','2021-04-02','XYXOdnySuNV9E37gqbkNerq7bWBBfqKA6J1AeyeiWHPCm',0,NULL),(55,'op','2021-04-02','RPfdU7glwxHDHjeZkr9GlNBHOH6vZSrYe6tAXW5LTtVvN',0,NULL),(56,'op','2021-04-02','QeHWxF0m0PC6N6DRbTHJRoE6btJ1JtxhsWHpbOxTcqX5q',0,NULL),(57,'efdfe','2021-03-27','7jqdfj6S8WwVRsJtVLmkwzGpzOcFWpigA9tBmiuVHI8BH',0,NULL);
 /*!40000 ALTER TABLE `prenotazioni` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-03-13 10:41:21
+-- Dump completed on 2021-03-27 11:15:47
