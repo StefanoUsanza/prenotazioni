@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9b927ecb-8f45-457e-a793-28b8386fb8cf" name="Default Changelist" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/esegui.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/esegui_tampone.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/esegui.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prenotazioni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prenotazioni.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lista_prenotazioni.php" beforeDir="false" afterPath="$PROJECT_DIR$/lista_prenotazioni.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prenota.php" beforeDir="false" afterPath="$PROJECT_DIR$/prenota.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +37,22 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Pull.Settings">
     <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pNRbz3NpKAgi0Em9VYhpePEmk9" />
@@ -27,12 +63,44 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../xampp/htdocs/prenotazioni" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/view" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PHP Script.prenota.php">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PhpstormProjects\prenotazioni\view" />
+      <recent name="C:\Users\User\PhpstormProjects\prenotazioni" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:80/prenotazioni/prenota.php" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/x-www-form-urlencoded" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="codice=BGTLSN71H19B157G&amp;giorno=2021-01-01" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.rest-api#1">
+    <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="prenota.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/prenotazioni/prenota.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -48,6 +116,9 @@
       <list>
         <item itemvalue="PHP Script.prenota.php" />
         <item itemvalue="JavaScript Debug.prenota.php" />
+        <item itemvalue="HTTP Request.rest-api#1" />
+        <item itemvalue="PHP Script.prenota.php" />
+        <item itemvalue="JavaScript Debug.prenota.php" />
       </list>
     </recent_temporary>
   </component>
@@ -59,7 +130,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615021636876</updated>
-      <workItem from="1615021638564" duration="7496000" />
+      <workItem from="1615021638564" duration="7920000" />
+      <workItem from="1615284407075" duration="4865000" />
+      <workItem from="1615622865983" duration="7974000" />
+      <workItem from="1615889338732" duration="4685000" />
+      <workItem from="1616227942021" duration="9892000" />
+      <workItem from="1616494094777" duration="5007000" />
+      <workItem from="1616833812706" duration="6638000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1615024950673</created>
@@ -75,61 +152,201 @@
       <option name="project" value="LOCAL" />
       <updated>1615030036553</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add post to xampp_server">
+      <created>1615031496122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615031496122</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add frontend HTML file for prenota.php">
+      <created>1615289214523</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615289214523</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor db configuration using an external file">
+      <created>1615624910577</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615624910577</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactor date input">
+      <created>1615627031324</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615627031324</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add db schema">
+      <created>1615628714737</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615628714737</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add vendor to .gitignore">
+      <created>1615892005583</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615892005583</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added table for data visualization">
+      <created>1615895632476</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615895632476</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add file pazienti_odierni">
+      <created>1616230301700</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616230301700</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add control for 'max prenotazioni' in one day">
+      <created>1616235165454</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1616235165454</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add qr-code generator for codice_prenotazione">
+      <created>1616239698500</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616239698500</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add visualizzazione operazioni_giornaliere">
+      <created>1616500326255</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616500326255</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactoring template">
+      <created>1616835439621</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616835439621</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add eseguito, note to db">
+      <created>1616840701748</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616840701748</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="add SQL insert example" />
-    <option name="LAST_COMMIT_MESSAGE" value="add SQL insert example" />
+    <MESSAGE value="add post to xampp_server" />
+    <MESSAGE value="add frontend HTML file for prenota.php" />
+    <MESSAGE value="refactor db configuration using an external file" />
+    <MESSAGE value="refactor date input" />
+    <MESSAGE value="add db schema" />
+    <MESSAGE value="add vendor to .gitignore" />
+    <MESSAGE value="added table for data visualization" />
+    <MESSAGE value="add file pazienti_odierni" />
+    <MESSAGE value="add control for 'max prenotazioni' in one day" />
+    <MESSAGE value="add qr-code generator for codice_prenotazione" />
+    <MESSAGE value="add visualizzazione operazioni_giornaliere" />
+    <MESSAGE value="refactoring template" />
+    <MESSAGE value="add eseguito, note to db" />
+    <option name="LAST_COMMIT_MESSAGE" value="add eseguito, note to db" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="544" y="25" key="#Deployment" timestamp="1615031096109">
+    <state x="544" y="25" key="#Deployment" timestamp="1615288508107">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="544" y="25" key="#Deployment/0.0.1360.728@0.0.1360.728" timestamp="1615031096109" />
+    <state x="544" y="25" key="#Deployment/0.0.1360.728@0.0.1360.728" timestamp="1615288508107" />
+    <state x="684" y="49" key="#Options" timestamp="1615288496400">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="684" y="49" key="#Options/0.0.1360.728@0.0.1360.728" timestamp="1615288496400" />
     <state x="272" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615029516591">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="272" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1615029516591" />
-    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1615031054562">
+    <state x="720" y="114" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1616840144370">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1615031054562" />
-    <state width="423" height="178" key="GridCell.Tab.0.bottom" timestamp="1615030208226">
+    <state x="720" y="114" key="DUMP_DIALOG_DIMENSION_KEY/0.0.1360.728@0.0.1360.728" timestamp="1616840144370" />
+    <state x="138" y="34" key="FileChooserDialogImpl" timestamp="1616233518430">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="423" height="178" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1615030208226" />
-    <state width="423" height="178" key="GridCell.Tab.0.center" timestamp="1615030208226">
+    <state x="138" y="34" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1616233518430" />
+    <state width="541" height="181" key="GridCell.Tab.0.bottom" timestamp="1616839924003">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="423" height="178" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1615030208226" />
-    <state width="423" height="178" key="GridCell.Tab.0.left" timestamp="1615030208226">
+    <state width="541" height="181" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1616839924003" />
+    <state width="541" height="181" key="GridCell.Tab.0.center" timestamp="1616839924003">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="423" height="178" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1615030208226" />
-    <state width="423" height="178" key="GridCell.Tab.0.right" timestamp="1615030208226">
+    <state width="541" height="181" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1616839924003" />
+    <state width="541" height="181" key="GridCell.Tab.0.left" timestamp="1616839924003">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="423" height="178" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1615030208226" />
+    <state width="541" height="181" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1616839924003" />
+    <state width="541" height="181" key="GridCell.Tab.0.right" timestamp="1616839924003">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="541" height="181" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1616839924003" />
     <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1615029499776">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1360.728@0.0.1360.728" timestamp="1615029499776" />
-    <state x="797" y="291" key="NewPhpFileDialog" timestamp="1615021655723">
+    <state x="797" y="291" key="NewPhpFileDialog" timestamp="1616841188113">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="797" y="291" key="NewPhpFileDialog/0.0.1360.728@0.0.1360.728" timestamp="1615021655723" />
+    <state x="797" y="291" key="NewPhpFileDialog/0.0.1360.728@0.0.1360.728" timestamp="1616841188113" />
     <state x="471" y="66" key="RollbackChangesDialog" timestamp="1615024120403">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="471" y="66" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1615024120403" />
-    <state x="544" y="100" key="Vcs.Push.Dialog.v2" timestamp="1615030063940">
+    <state x="544" y="100" key="Vcs.Push.Dialog.v2" timestamp="1616835441124">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="544" y="100" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1615030063940" />
+    <state x="544" y="100" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1616835441124" />
+    <state x="530" y="251" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1615628964517">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="530" y="251" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1360.728@0.0.1360.728" timestamp="1615628964517" />
+    <state x="260" y="19" key="com.intellij.database.dbimport.ImportDialog" timestamp="1615628927793">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="260" y="19" key="com.intellij.database.dbimport.ImportDialog/0.0.1360.728@0.0.1360.728" timestamp="1615628927793" />
+    <state x="182" y="0" width="499" height="368" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1616839773550">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="182" y="0" width="499" height="368" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1360.728@0.0.1360.728" timestamp="1616839773550" />
+    <state x="844" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616835514766">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="844" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1360.728@0.0.1360.728" timestamp="1616835514766" />
   </component>
 </project>
