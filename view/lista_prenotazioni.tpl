@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>prenotazioni</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
-</head>
-<body>
-    <h1>Portale prenotazioni</h1>
-    <h2>Lista delle prenotazioni</h2>
+<?php $this->layout('main',['argomento'=> 'lista delle prerenotazioni']) ?>
 
 <table>
     <thead><tr>
@@ -21,5 +12,3 @@
     </tr>
     <?php endforeach ?>
 </table>
-</body>
-</html>
