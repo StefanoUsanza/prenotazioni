@@ -65,8 +65,8 @@ else {
             'codice_prenotazione' => $codice_prenotazione
         ]
     );
-
     //header('location:lista_prenotazioni.php');
     echo $template->render('qr_code', ['codice'=>$codice_prenotazione]);
+
     exit(0);
 }
