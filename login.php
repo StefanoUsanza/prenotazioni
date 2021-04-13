@@ -25,6 +25,7 @@ else {
     $pass = $riga['password'];
     //verifica password corretta
     if(password_verify($password,$pass)){
+        $_SESSION['username'] = $username;
         echo $template->render('login_corretto', ['username' => $username, 'password' => $password]);
     }
     //verifica password errata

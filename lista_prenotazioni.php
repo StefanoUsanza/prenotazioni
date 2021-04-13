@@ -14,5 +14,14 @@ $stmt = $pdo->query($sql);
 
 $result = $stmt->fetchAll();
 
-//template per visualizzare una tabella
-echo $template->render('lista_prenotazioni', ['result'=>$result]);
+if(isset($_SESSION['username'])){
+
+    $username = $_SESSION['username'];
+
+    //template per visualizzare una tabella
+    echo $template->render('lista_prenotazioni', ['result'=>$result, 'username'=>$username]);
+}
+else{
+    echo $template->render('login_errato');
+}
+

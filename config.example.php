@@ -14,3 +14,7 @@ $charset = 'utf8';
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
 $pdo= new PDO($dsn, $user, $pass);
+
+$prenotazioni_max='n_max_prenotazioni';
+
+session_start();
