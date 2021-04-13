@@ -3,6 +3,7 @@
 <table>
     <thead><tr>
         <th>Codice fiscale</th><th>data prenotazione</th>
+        <p> ciao <?=$username?></p>
     </tr></thead>
     <?php foreach($result as $row): ?>
 
