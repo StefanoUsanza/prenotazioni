@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b927ecb-8f45-457e-a793-28b8386fb8cf" name="Default Changelist" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/esegui.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/esegui_tampone.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/esegui.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prenotazioni.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prenotazioni.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/logout.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lista_prenotazioni.php" beforeDir="false" afterPath="$PROJECT_DIR$/lista_prenotazioni.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prenota.php" beforeDir="false" afterPath="$PROJECT_DIR$/prenota.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/main.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/main.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +62,13 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/view" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\PhpstormProjects\prenotazioni\view" />
       <recent name="C:\Users\User\PhpstormProjects\prenotazioni" />
+      <recent name="C:\Users\User\PhpstormProjects\prenotazioni\view" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -137,6 +133,10 @@
       <workItem from="1616227942021" duration="9892000" />
       <workItem from="1616494094777" duration="5007000" />
       <workItem from="1616833812706" duration="6638000" />
+      <workItem from="1617098565536" duration="2357000" />
+      <workItem from="1618038400558" duration="4204000" />
+      <workItem from="1618304685491" duration="4478000" />
+      <workItem from="1618643395412" duration="1384000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1615024950673</created>
@@ -243,7 +243,42 @@
       <option name="project" value="LOCAL" />
       <updated>1616840701748</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update db structure">
+      <created>1617100832337</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1617100832337</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add annulla prenotazione">
+      <created>1617100868576</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617100868576</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add registrazione">
+      <created>1618048022379</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1618048022379</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add log in">
+      <created>1618307567100</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1618307567100</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add session management">
+      <created>1618311032492</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1618311032492</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +312,12 @@
     <MESSAGE value="add visualizzazione operazioni_giornaliere" />
     <MESSAGE value="refactoring template" />
     <MESSAGE value="add eseguito, note to db" />
-    <option name="LAST_COMMIT_MESSAGE" value="add eseguito, note to db" />
+    <MESSAGE value="update db structure" />
+    <MESSAGE value="add annulla prenotazione" />
+    <MESSAGE value="add registrazione" />
+    <MESSAGE value="add log in" />
+    <MESSAGE value="add session management" />
+    <option name="LAST_COMMIT_MESSAGE" value="add session management" />
   </component>
   <component name="WindowStateProjectService">
     <state x="544" y="25" key="#Deployment" timestamp="1615288508107">
@@ -292,46 +332,46 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="272" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1615029516591" />
-    <state x="720" y="114" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1616840144370">
+    <state x="720" y="114" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1617100785059">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="720" y="114" key="DUMP_DIALOG_DIMENSION_KEY/0.0.1360.728@0.0.1360.728" timestamp="1616840144370" />
+    <state x="720" y="114" key="DUMP_DIALOG_DIMENSION_KEY/0.0.1360.728@0.0.1360.728" timestamp="1617100785059" />
     <state x="138" y="34" key="FileChooserDialogImpl" timestamp="1616233518430">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="138" y="34" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1616233518430" />
-    <state width="541" height="181" key="GridCell.Tab.0.bottom" timestamp="1616839924003">
+    <state width="1153" height="183" key="GridCell.Tab.0.bottom" timestamp="1618047735486">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="541" height="181" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1616839924003" />
-    <state width="541" height="181" key="GridCell.Tab.0.center" timestamp="1616839924003">
+    <state width="1153" height="183" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1618047735486" />
+    <state width="1153" height="183" key="GridCell.Tab.0.center" timestamp="1618047735486">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="541" height="181" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1616839924003" />
-    <state width="541" height="181" key="GridCell.Tab.0.left" timestamp="1616839924003">
+    <state width="1153" height="183" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1618047735486" />
+    <state width="1153" height="183" key="GridCell.Tab.0.left" timestamp="1618047735486">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="541" height="181" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1616839924003" />
-    <state width="541" height="181" key="GridCell.Tab.0.right" timestamp="1616839924003">
+    <state width="1153" height="183" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1618047735486" />
+    <state width="1153" height="183" key="GridCell.Tab.0.right" timestamp="1618047735486">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="541" height="181" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1616839924003" />
+    <state width="1153" height="183" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1618047735486" />
     <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1615029499776">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1360.728@0.0.1360.728" timestamp="1615029499776" />
-    <state x="797" y="291" key="NewPhpFileDialog" timestamp="1616841188113">
+    <state x="797" y="291" key="NewPhpFileDialog" timestamp="1618306544056">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="797" y="291" key="NewPhpFileDialog/0.0.1360.728@0.0.1360.728" timestamp="1616841188113" />
+    <state x="797" y="291" key="NewPhpFileDialog/0.0.1360.728@0.0.1360.728" timestamp="1618306544056" />
     <state x="471" y="66" key="RollbackChangesDialog" timestamp="1615024120403">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="471" y="66" key="RollbackChangesDialog/0.0.1360.728@0.0.1360.728" timestamp="1615024120403" />
-    <state x="544" y="100" key="Vcs.Push.Dialog.v2" timestamp="1616835441124">
+    <state x="544" y="100" key="Vcs.Push.Dialog.v2" timestamp="1618311033832">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="544" y="100" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1616835441124" />
+    <state x="544" y="100" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1618311033832" />
     <state x="530" y="251" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1615628964517">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -340,13 +380,13 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="260" y="19" key="com.intellij.database.dbimport.ImportDialog/0.0.1360.728@0.0.1360.728" timestamp="1615628927793" />
-    <state x="182" y="0" width="499" height="368" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1616839773550">
+    <state x="242" y="54" width="499" height="368" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1618047792960">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="182" y="0" width="499" height="368" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1360.728@0.0.1360.728" timestamp="1616839773550" />
-    <state x="844" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616835514766">
+    <state x="242" y="54" width="499" height="368" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1360.728@0.0.1360.728" timestamp="1618047792960" />
+    <state x="844" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618311079653">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="844" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1360.728@0.0.1360.728" timestamp="1616835514766" />
+    <state x="844" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1360.728@0.0.1360.728" timestamp="1618311079653" />
   </component>
 </project>
