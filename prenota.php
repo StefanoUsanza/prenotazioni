@@ -52,7 +52,7 @@ if($n_prenotazioni>=$prenotazioni_max) {
 }
 else {
 //query di inserimento preparata
-    $sql = "INSERT INTO prenotazioni VALUES (null, :codice_fiscale, :giorno, :codice_prenotazione)";
+    $sql = "INSERT INTO prenotazioni VALUES (null, :codice_fiscale, :giorno, :codice_prenotazione, '0', null, '0')";
 
 //invio query al DB che la tiene in memoria
     $stm = $pdo->prepare($sql);
