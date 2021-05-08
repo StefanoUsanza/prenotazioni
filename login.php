@@ -10,7 +10,6 @@ $template = new Engine('./view', 'tpl');
 $username= $_POST['username'];
 $password = $_POST['password'];
 
-
 //controllo nome utente duplicato
 $stmt = $pdo->query("select * from utenti
 where username='$username'");
