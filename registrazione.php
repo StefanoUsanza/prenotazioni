@@ -37,7 +37,7 @@ else if ($password==$cpassword && $newUtente==true){
     $password = password_hash($password,PASSWORD_DEFAULT);
 
     //query di inserimento preparata
-    $sql = "INSERT INTO utenti VALUES (null, :username, :password, :codice_fiscale)";
+    $sql = "INSERT INTO utenti VALUES (null, :username, :password, :codice_fiscale, 0)";
 
     //invio query al DB che la tiene in memoria
     $stm = $pdo->prepare($sql);

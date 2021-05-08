@@ -28,7 +28,10 @@ else {
     if(password_verify($password,$pass)==true){
         $_SESSION['username'] = $username;
         $_SESSION['codice_fiscale'] = $riga['codice_fiscale'];
-        echo $template->render('login_corretto', ['username' => $username, 'password' => $password]);
+        if($riga['operatore']==0)
+            echo $template->render('login_corretto', ['username' => $username, 'password' => $password]);
+        else if($riga['operatore']==1)
+            echo $template->render('login_operatore', ['username' => $username, 'password' => $password]);
     }
     //verifica password errata
     else{
