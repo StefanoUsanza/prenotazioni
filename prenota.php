@@ -33,7 +33,7 @@ function random_str(
     return implode('', $pieces);
 }
 
-$codice_fiscale= $_POST['codice'];
+$codice_fiscale= $_SESSION['codice_fiscale'];
 $giorno = $_POST['giorno'];
 $codice_prenotazione = random_str();
 

@@ -10,6 +10,7 @@ $template = new Engine('./view', 'tpl');
 $username= $_POST['username'];
 $password = $_POST['password'];
 
+
 //controllo nome utente duplicato
 $stmt = $pdo->query("select * from utenti
 where username='$username'");
@@ -24,12 +25,18 @@ if($riga === false){
 else {
     $pass = $riga['password'];
     //verifica password corretta
-    if(password_verify($password,$pass)){
+    if(password_verify($password,$pass)==true){
         $_SESSION['username'] = $username;
-        echo $template->render('login_corretto', ['username' => $username, 'password' => $password]);
+        $_SESSION['codice_fiscale'] = $riga['codice_fiscale'];
+        if($riga['operatore']==0)
+            echo $template->render('login_corretto', ['username' => $username, 'password' => $password]);
+        else if($riga['operatore']==1)
+            echo $template->render('login_operatore', ['username' => $username, 'password' => $password]);
     }
     //verifica password errata
     else{
+        echo $username;
+        echo $password;
         echo $template->render('login_errato');
     }
 
