@@ -55,10 +55,11 @@ CREATE TABLE `utenti` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `codice_fiscale` varchar(16) NOT NULL,
+  `codice_fiscale` varchar(16) DEFAULT NULL,
+  `operatore` tinyint(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`),
   UNIQUE KEY `utenti_username_uindex` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +68,7 @@ CREATE TABLE `utenti` (
 
 LOCK TABLES `utenti` WRITE;
 /*!40000 ALTER TABLE `utenti` DISABLE KEYS */;
-INSERT INTO `utenti` VALUES (5,'utente1','$2y$10$Oo8wROQ7FtfMNn10l5kQH.fas8xLfajmMZTQ7LoJZk.KgzJkgaEsG','ern20');
+INSERT INTO `utenti` VALUES (5,'utente1','$2y$10$Oo8wROQ7FtfMNn10l5kQH.fas8xLfajmMZTQ7LoJZk.KgzJkgaEsG','ern20',0),(6,'BS0001','$2y$10$1CAffJ.Tq9//Kt9HqnHmZOAh4vTxQBeaRb0zINWeYEKgwoe/Tqoz6',NULL,1);
 /*!40000 ALTER TABLE `utenti` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -80,4 +81,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-04 13:44:49
+-- Dump completed on 2021-05-08  9:20:19
