@@ -28,7 +28,7 @@ else {
         $_SESSION['username'] = $username;
         $_SESSION['codice_fiscale'] = $riga['codice_fiscale'];
         if($riga['operatore']==0)
-            echo $template->render('login_corretto', ['username' => $username, 'password' => $password]);
+            echo $template->render('home_page_utente', ['username' => $username, 'password' => $password]);
         else if($riga['operatore']==1)
             echo $template->render('login_operatore', ['username' => $username, 'password' => $password]);
     }
