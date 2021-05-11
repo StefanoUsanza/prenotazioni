@@ -1,40 +1,37 @@
-<?php $this->layout('main',['argomento'=> 'home page']) ?>
+<?php $this->layout('main') ?>
 
-<nav class="navbar navbar-light bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" style="color:white">Navbar</a>
-        <div>
-            <a class="btn btn-primary" href="pre-login.php" role="button">Login</a>
-            <a class="btn btn-primary" href="pre-registrazione.php" role="button">Register</a>
+<div class="container-fluid banner">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-md">
+                <div class="navbar-brand">TAMPONANDO CON LE STELLE</div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pre-login.php">LOG IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pre-registrazione.php">REGISTER</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</nav>
-
-<p class="text-start">Su questo sito potrete prenotare tamponi e vaccini per in data scelta da voi. bla bla bla
-</p>
-<div class="position-absolute top-50 start-50 translate-middle">
-
-    <div id="carousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/1.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img src="images/2.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img src="images/3.jpg" alt="Third slide">
-            </div>
-        </div>
-    </div>
-
-</div>
-<div class="navbar2">
-    <nav class="navbar navbar fixed-bottom navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand"><h6>Alebardi Marco,<br>Collu Mattia,<br>Rosola Luca,<br>Usanza Stefano</h6></a>
+        <div class="col-md-8 offset-md-2 info">
             <div class="logo">
-                <img src="logo/logo.png" width="100" height="100" class="rounded-circle">
+                <img src="images/logo.jpg" class="img-fluid rounded-circle mx-auto d-block">
             </div>
-    </nav>
+            <div class="testo2">
+                <p class="text-center">
+                    Sito web per la prenotazione di tamponi e vaccini
+                </p>
+            </div>
+        </div>
+        <footer class="bg-transparent text-left">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="text-left">
+                        © 2021 Copyright: Tamponando con le stelle
+                    </div>
+        </footer>
+    </div>
+
 </div>

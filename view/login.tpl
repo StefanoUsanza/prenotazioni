@@ -1,26 +1,40 @@
-<?php $this->layout('main',['argomento'=> 'login page']) ?>
+<?php $this->layout('main') ?>
 
-<form action="login.php" method="post">
-    <fieldset>
-        <legend>login</legend>
-        <div class="row g-3 align-items-center">
-            <div class="col-sm-2">
-                <label for="username" class="col-form-label">Username</label>
-            </div>
-            <div class="col-auto">
-                <input type="text" id="username" class="form-control" placeholder="username" name="username">
+<div class="container-fluid banner">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-md">
+                <div class="navbar-brand">TAMPONANDO CON LE STELLE</div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <HOME>HOME</HOME>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-8 offset-md-2 info">
+            <form action="login.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="username" class="form-control" name="username" id="username" aria-describedby="usernameHelp" placeholder="Inserisci l'username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Inserisci la password">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div class="testo1">
+                <p class="text-center aling-text-bottom">
+                    Sito web per la prenotazione di tamponi e vaccini
+                </p>
             </div>
         </div>
-
-        <div class="row g-3 align-items-center">
-            <div class="col-sm-2">
-                <label for="password" class="col-form-label">Password</label>
-            </div>
-            <div class="col-auto">
-                <input type="password" id="password" class="form-control" placeholder="password" name="password">
-            </div>
-        </div>
-
-        <input type="submit" value="Log in" class="btn btn-primary">
-    </fieldset>
-</form>
+    </div>
+</div>
+<footer class="text-muted bg-dark">
+    <p class="text-left">© 2020 D&D_API. All Rights Reserved.
+    </p>
+</footer>
