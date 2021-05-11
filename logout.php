@@ -12,4 +12,4 @@ session_destroy();
 //distrugge eventuali informazioni in mermoria RAM
 $_SESSION= array();
 
-echo $template->render('logout');
+echo $template->render('first_connection');

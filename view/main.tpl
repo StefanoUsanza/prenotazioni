@@ -8,11 +8,6 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <header>
-        <?php if(isset($_SESSION['username'])): ?>
-        ciao <?= $_SESSION['username'] ?> - <a href="logout.php">Logout</a>
-        <?php endif; ?>
-    </header>
 <?= $this->section('content')?>
 </body>
 </html>
