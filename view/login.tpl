@@ -7,7 +7,7 @@
                 <div class="navbar-brand">TAMPONANDO CON LE STELLE</div>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="index.php">
                             <HOME>HOME</HOME>
                         </a>
                     </li>
@@ -28,13 +28,14 @@
             </form>
             <div class="testo1">
                 <p class="text-center aling-text-bottom">
-                    Sito web per la prenotazione di tamponi e vaccini
+                    accedi utilizzando nome utente e password
                 </p>
             </div>
         </div>
     </div>
+    <hr id="linea">
+    <footer class="text-muted bg-transparent">
+        <p class="text-left" style="color:#ffffff">© 2021 TAMPONANDO CON LE STELLE. All Rights Reserved.
+        </p>
+    </footer>
 </div>
-<footer class="text-muted bg-dark">
-    <p class="text-left">© 2020 D&D_API. All Rights Reserved.
-    </p>
-</footer>

@@ -7,10 +7,10 @@ body{
 }
 
 .banner{
-    height: 100%;
-    width: 100%;
+    min-height: 1000px;
+    min-width: 100%;
     background:url('images/overlay.png'),url('images/sfondo.jpg');
-    background-position: top;
+    background-position: top left;
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -79,4 +79,12 @@ body{
 
 .testo3{
     line-height:9rem;
+}
+#linea{
+    border: 60px solid;
+    color: transparent;
+}
+#linea-registrazione{
+    border: 300px solid;
+    color: transparent;
 }

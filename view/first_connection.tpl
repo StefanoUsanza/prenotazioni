@@ -1,5 +1,6 @@
 <?php $this->layout('main') ?>
 
+
 <div class="container-fluid banner">
     <div class="row">
         <div class="col-md-12">
@@ -25,13 +26,10 @@
                 </p>
             </div>
         </div>
-        <footer class="bg-transparent text-left">
-            <div class="container p-4">
-                <div class="row">
-                    <div class="text-left">
-                        © 2021 Copyright: Tamponando con le stelle
-                    </div>
-        </footer>
-    </div>
 
+    </div>
+    <footer class="text-muted bg-transparent">
+        <p class="text-left" style="color:#ffffff">© 2021 TAMPONANDO CON LE STELLE. All Rights Reserved.
+        </p>
+    </footer>
 </div>
