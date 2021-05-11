@@ -17,9 +17,9 @@
         </div>
         <div class="col-md-8 offset-md-2 info">
             <a href="pre-prenota.php" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Prenota tampone</a>
-            <a href="atampone.html" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Annulla tampone</a>
-            <a href="pvaccino.html" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Prenota vaccino</a>
-            <a href="vprenotazioni.html" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Visualizza prenotazioni</a>
+            <a href="pre-annulla.php" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Annulla tampone</a>
+            <a href="vaccino.html" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Prenota vaccino</a>
+            <a href="visualizza.html" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Visualizza prenotazioni</a>
             <div class="testo2">
                 <p class="text-center">
                     Prenota un tampone-vaccino, oppure controlla le tue prenotazioni

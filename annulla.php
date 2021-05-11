@@ -7,10 +7,15 @@ use League\Plates\Engine;
 //creazione oggetto per gestire template
 $template = new Engine('./view', 'tpl');
 
+if($_POST['codice']==null){
+    echo $template->render('annulla_errato');
+}
+else{
 $codice_prenotazione= $_POST['codice'];
-
+$cod= $_SESSION['codice_fiscale'];
 //query di inserimento preparata
-$sql = "UPDATE prenotazioni SET annullato=true where prenotazioni.codice_prenotazione= :codice";
+$sql = "UPDATE prenotazioni SET annullato=true where prenotazioni.codice_prenotazione= :codice
+and prenotazioni.codice_fiscale= '$cod'";
 
 //invio query al DB che la tiene in memoria
 $stm = $pdo->prepare($sql);
@@ -21,5 +26,6 @@ $stm->execute(
         'codice' => $codice_prenotazione
     ]
 );
-//header('location:lista_prenotazioni.php');
-echo $template->render('annulla', ['codice' => $codice_prenotazione]);
+    echo $template->render('results_annulla', ['codice' => $codice_prenotazione]);
+
+}
