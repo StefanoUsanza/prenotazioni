@@ -51,5 +51,5 @@ else if ($password==$cpassword && $newUtente==true){
         ]
     );
     //header('location:lista_prenotazioni.php');
-    echo $template->render('registrazione', ['username' => $username, 'password' => $password, 'codice_fiscale' => $codice_fiscale]);
+    echo $template->render('results_registrazione', ['username' => $username, 'password' => $password, 'codice_fiscale' => $codice_fiscale]);
 }

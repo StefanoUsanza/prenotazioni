@@ -8,7 +8,8 @@ use League\Plates\Engine;
 $template = new Engine('./view', 'tpl');
 
 if($_SESSION['username'] != null){
-    echo $template->render('prenota');
+    echo $template->render('home_page_utente');
 }
 else
     echo $template->render('login_errato');
+

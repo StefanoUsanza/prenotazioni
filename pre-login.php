@@ -7,4 +7,11 @@ use League\Plates\Engine;
 //creazione oggetto per gestire template
 $template = new Engine('./view', 'tpl');
 
+if(isset($_SESSION['username'])){
+    //distrugge il file con informazioni di sessione
+    session_destroy();
+//distrugge eventuali informazioni in mermoria RAM
+    $_SESSION= array();
+}
+
 echo $template->render('login');

@@ -4,8 +4,8 @@
     <div class="container-fluid">
         <a class="navbar-brand" style="color:white">Navbar</a>
         <div>
-            <a class="btn btn-primary" href="login.html" role="button">Login</a>
-            <a class="btn btn-primary" href="registrazione.html" role="button">Register</a>
+            <a class="btn btn-primary" href="pre-login.php" role="button">Login</a>
+            <a class="btn btn-primary" href="pre-registrazione.php" role="button">Register</a>
         </div>
     </div>
 </nav>
