@@ -7,13 +7,13 @@
                 <div class="navbar-brand">TAMPONANDO CON LE STELLE</div>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">
+                        <a class="nav-link" href="pre-home_page_utente.php">
                             <HOME>HOME</HOME>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pre-login.php">
-                            <HOME>LOGIN</HOME>
+                        <a class="nav-link" href="logout.php">
+                            <HOME>LOGOUT</HOME>
                         </a>
                     </li>
                 </ul>

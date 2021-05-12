@@ -13,19 +13,28 @@ if($_POST['codice']==null){
 else{
 $codice_prenotazione= $_POST['codice'];
 $cod= $_SESSION['codice_fiscale'];
-//query di inserimento preparata
-$sql = "UPDATE prenotazioni SET annullato=true where prenotazioni.codice_prenotazione= :codice
-and prenotazioni.codice_fiscale= '$cod'";
+$stmt = $pdo->query("select * from prenotazioni
+where prenotazioni.codice_prenotazione= '$codice_prenotazione' and prenotazioni.codice_fiscale= '$cod'");
+$temp=null;
+    while($row =$stmt->fetch(PDO::FETCH_ASSOC)){
+        $temp = $row['codice_prenotazione'];
+    }
+if($temp==null)
+    echo $template->render('login_errato');
+else{
+    //query di inserimento preparata
+    $sql = "UPDATE prenotazioni SET annullato=true where prenotazioni.codice_prenotazione= :codice
+    and prenotazioni.codice_fiscale= '$cod'";
 
-//invio query al DB che la tiene in memoria
-$stm = $pdo->prepare($sql);
+    //invio query al DB che la tiene in memoria
+    $stm = $pdo->prepare($sql);
 
-//invio dei dati per i segnaposto
-$stm->execute(
-    [
-        'codice' => $codice_prenotazione
-    ]
-);
-    echo $template->render('results_annulla', ['codice' => $codice_prenotazione]);
-
+    //invio dei dati per i segnaposto
+    $stm->execute(
+        [
+            'codice' => $codice_prenotazione
+        ]
+    );
+        echo $template->render('results_annulla', ['codice' => $codice_prenotazione]);
+    }
 }
