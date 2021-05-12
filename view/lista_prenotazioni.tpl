@@ -7,6 +7,9 @@
                 <div class="navbar-brand">TAMPONANDO CON LE STELLE</div>
                 <ul class="nav">
                     <li class="nav-item">
+                        <a class="nav-link">UTENTE: <?=$_SESSION['username']?></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="pre-home_page_utente.php">HOME</a>
                     </li>
                     <li class="nav-item">
@@ -38,7 +41,7 @@
     </table>
     <div class="testo4">
         <p class="text-center">
-            Sito web per la prenotazione di tamponi e vaccini
+            Controlla le tue prenotazioni attive
         </p>
     </div>
 </div>

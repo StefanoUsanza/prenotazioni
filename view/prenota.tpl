@@ -7,7 +7,10 @@
                 <div class="navbar-brand">TAMPONANDO CON LE STELLE</div>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">HOME</a>
+                        <a class="nav-link">UTENTE: <?=$_SESSION['username']?></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pre-home_page_utente.php">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">LOG OUT</a>
