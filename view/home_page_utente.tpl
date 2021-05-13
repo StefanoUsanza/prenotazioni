@@ -16,7 +16,7 @@
             </nav>
         </div>
         <div class="col-md-8 offset-md-2 info">
-            <div class="d-grid gap-0 col-6 mx-auto btn">
+            <div class="d-grid gap-1 col-6 mx-auto btn">
             <a href="pre-prenota.php" class="btn btn-primary" role="button" aria-pressed="true">Prenota tampone</a>
             <a href="pre-annulla.php" class="btn btn-primary" role="button" aria-pressed="true">Annulla tampone</a>
             <a href="vaccino.html" class="btn btn-primary" role="button" aria-pressed="true">Prenota vaccino</a>

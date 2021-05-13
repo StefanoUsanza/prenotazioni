@@ -16,7 +16,7 @@
             </nav>
         </div>
         <div class="col-md-8 offset-md-2 info">
-            <div class="d-grid gap-0 col-6 mx-auto btn">
+            <div class="d-grid gap-1 col-6 mx-auto btn">
             <a href="pre-esegui_operazione.php" class="btn btn-block active" role="button" aria-pressed="true">Esegui operazione</a>
             <a href="pazienti_odierni.php" class="btn btn-block active" role="button" aria-pressed="true">Visualizza prenotazioni odierne</a>
             </div>
