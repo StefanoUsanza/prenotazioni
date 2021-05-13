@@ -14,7 +14,8 @@ else{
 $codice_prenotazione= $_POST['codice'];
 $cod= $_SESSION['codice_fiscale'];
 $stmt = $pdo->query("select * from prenotazioni
-where prenotazioni.codice_prenotazione= '$codice_prenotazione' and prenotazioni.codice_fiscale= '$cod'");
+where prenotazioni.codice_prenotazione= '$codice_prenotazione' and prenotazioni.codice_fiscale= '$cod'
+and eseguito=0 and annullato=0");
 $temp=null;
     while($row =$stmt->fetch(PDO::FETCH_ASSOC)){
         $temp = $row['codice_prenotazione'];

@@ -23,6 +23,10 @@
             <p>Inserisci il codice dell'utente</p>
             <form action="esegui_operazione.php" method="post">
                 <div class="form-group">
+                    <label for="codice_fiscale">Codice fiscale</label>
+                    <input type="text" class="form-control" name="codice_fiscale" id="codice_fiscale" placeholder="Codice fiscale">
+                </div>
+                <div class="form-group">
                     <label for="codice">Codice prenotazione</label>
                     <input type="text" class="form-control" name="codice" id="codice" placeholder="Codice prenotazione">
                 </div>
