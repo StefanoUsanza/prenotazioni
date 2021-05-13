@@ -1,5 +1,5 @@
-<?php $this->layout('main',['argomento'=> 'login errato']) ?>
+<?php $this->layout('main') ?>
 
 <p> login errato</p>
 
-<a href="firstConnection.html">home page</a>
+<a href="index.php">home page</a>

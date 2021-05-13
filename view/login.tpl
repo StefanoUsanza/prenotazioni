@@ -15,32 +15,25 @@
             </nav>
         </div>
         <div class="col-md-8 offset-md-2 info">
-            <form action="registrazione.php" method="post">
+            <form action="login.php" method="post">
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" class="form-control" name="username" id="username" aria-describedby="usernameHelp" placeholder="Inserisci l'username">
-                </div>
-                <div class="form-group">
-                    <label for="codice_fiscale">Codice Fiscale</label>
-                    <input type="text" class="form-control" name="codice_fiscale" id="codice_fiscale" aria-describedby="usernameHelp" placeholder="Inserisci il codice fiscale">
+                    <input type="username" class="form-control" name="username" id="username" aria-describedby="usernameHelp" placeholder="Inserisci l'username">
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" class="form-control" name="password" id="password" placeholder="Inserisci la password">
                 </div>
-                <div class="form-group">
-                    <label for="cpassword">Password</label>
-                    <input type="password" class="form-control" name="cpassword" id="cpassword" placeholder="Reinserisci la password">
-                </div>
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-primary">Login</button>
             </form>
-            <div class="testo3">
+            <div class="testo1">
                 <p class="text-center aling-text-bottom">
-                    Registrati per poter prenotare tamponi e vaccini
+                    accedi utilizzando nome utente e password
                 </p>
             </div>
         </div>
     </div>
+    <hr id="linea">
     <footer class="text-muted bg-transparent">
         <p class="text-left" style="color:#ffffff">© 2021 TAMPONANDO CON LE STELLE. All Rights Reserved.
         </p>

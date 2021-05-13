@@ -1,4 +1,4 @@
-<?php $this->layout('main',['argomento'=> 'home page']) ?>
+<?php $this->layout('main') ?>
 
 <div class="container-fluid banner">
     <div class="row">
@@ -10,27 +10,35 @@
                         <a class="nav-link">UTENTE: <?=$_SESSION['username']?></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="pre-home_page_utente.php">HOME</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="logout.php">LOG OUT</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="col-md-8 offset-md-2 info">
-            <div class="d-grid gap-1 col-6 mx-auto btn">
-            <a href="pre-prenota.php" class="btn btn-primary" role="button" aria-pressed="true">Prenota tampone</a>
-            <a href="pre-annulla.php" class="btn btn-primary" role="button" aria-pressed="true">Annulla tampone</a>
-            <a href="vaccino.html" class="btn btn-primary" role="button" aria-pressed="true">Prenota vaccino</a>
-            <a href="lista_prenotazioni.php" class="btn btn-primary" role="button" aria-pressed="true">Visualizza prenotazioni</a>
+            <div class="it-datepicker-wrapper">
+                <form action="prenota.php" method="post">
+                <div class="form-group">
+                    <input class="form-control it-date-datepicker" name="giorno" id="giorno" type="date" placeholder="Giorno">
+                    <input type="submit" class="btn btn-primary btn-block" value="Prenota tampone">
+                </div>
+                </form>
             </div>
-            <div class="testo2">
+
+            <div class="testo1">
                 <p class="text-center">
-                    Prenota un tampone-vaccino, oppure controlla le tue prenotazioni
+                    seleziona una data per prenotare il tampone
                 </p>
             </div>
         </div>
     </div>
+    <hr id="linea">
     <footer class="text-muted bg-transparent">
         <p class="text-left" style="color:#ffffff">© 2021 TAMPONANDO CON LE STELLE. All Rights Reserved.
         </p>
     </footer>
 </div>
+

@@ -6,7 +6,7 @@ ini_set('log_errors', 0);
 
 
 $host = 'localHost';
-$db = 'app_prenotazioni';
+$db = 'tamponi';
 $user = 'root';
 $pass = '';
 $charset = 'utf8';

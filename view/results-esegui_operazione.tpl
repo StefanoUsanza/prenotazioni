@@ -8,26 +8,21 @@
                 <div class="navbar-brand">TAMPONANDO CON LE STELLE</div>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="pre-login.php">LOG IN</a>
+                        <a class="nav-link">OPERATORE: <?=$_SESSION['username']?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pre-registrazione.php">REGISTER</a>
+                        <a class="nav-link" href="pre-home_page_operatore.php">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">LOG OUT</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div class="col-md-8 offset-md-2 info">
-            <div class="logo">
-                <img src="images/logo.jpg" class="img-fluid rounded-circle mx-auto d-block">
-            </div>
-            <div class="testo2">
-                <p class="text-center">
-                    Sito web per la prenotazione di tamponi e vaccini
-                </p>
-            </div>
-        </div>
-
+        <p> il tampone assocciato al codice <?=$codice?> è stato eseguito</p>
+        <p> note: <?=$note?></p>
     </div>
+    <hr style="color: transparent; border: 200px solid">
     <footer class="text-muted bg-transparent">
         <p class="text-left" style="color:#ffffff">© 2021 TAMPONANDO CON LE STELLE. All Rights Reserved.
         </p>
