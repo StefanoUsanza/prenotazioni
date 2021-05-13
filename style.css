@@ -48,6 +48,7 @@ body{
     letter-spacing: 2px;
 }
 
+
 .banner .info p{
     font-size: 2em;
     font-weight: 500;
@@ -55,18 +56,18 @@ body{
     letter-spacing: 2px;
 }
 
-.banner .info a{
-    margin-left:50%;
-    transform: translateX(-50%);
+.btn a{
+    margin-left:10px;
+    margin-right: 10px;
     color: #fff;
-    background: #e91d43;
+    background: #3498DB;
     padding:10px 20px;
     font-size: 2em;
     font-weight: 600;
 }
 
-.banner .info a:hover{
-    background: #e91e63;
+.btn a:hover{
+    background: #AED6F1;
 }
 
 .testo1{

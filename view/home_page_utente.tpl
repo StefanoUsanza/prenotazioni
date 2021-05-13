@@ -16,10 +16,12 @@
             </nav>
         </div>
         <div class="col-md-8 offset-md-2 info">
-            <a href="pre-prenota.php" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Prenota tampone</a>
-            <a href="pre-annulla.php" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Annulla tampone</a>
-            <a href="vaccino.html" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Prenota vaccino</a>
-            <a href="lista_prenotazioni.php" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Visualizza prenotazioni</a>
+            <div class="d-grid gap-0 col-6 mx-auto btn">
+            <a href="pre-prenota.php" class="btn btn-primary" role="button" aria-pressed="true">Prenota tampone</a>
+            <a href="pre-annulla.php" class="btn btn-primary" role="button" aria-pressed="true">Annulla tampone</a>
+            <a href="vaccino.html" class="btn btn-primary" role="button" aria-pressed="true">Prenota vaccino</a>
+            <a href="lista_prenotazioni.php" class="btn btn-primary" role="button" aria-pressed="true">Visualizza prenotazioni</a>
+            </div>
             <div class="testo2">
                 <p class="text-center">
                     Prenota un tampone-vaccino, oppure controlla le tue prenotazioni
