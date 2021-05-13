@@ -8,7 +8,7 @@ use League\Plates\Engine;
 $template = new Engine('./view', 'tpl');
 
 //query di inserimento preparata
-$sql = "select codice_fiscale,codice_prenotazione from prenotazioni
+$sql = "select codice_fiscale,codice_prenotazione,giorno from prenotazioni
 where giorno=curdate() and prenotazioni.eseguito=0 and prenotazioni.annullato=0";
 
 $stmt = $pdo->query($sql);

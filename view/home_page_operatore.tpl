@@ -17,7 +17,7 @@
         </div>
         <div class="col-md-8 offset-md-2 info">
             <a href="pre-esegui_operazione.php" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Esegui operazione</a>
-            <a href="vprenotazioniordierne.html" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Visualizza prenotazioni odierne</a>
+            <a href="pazienti_odierni.php" class="btn btn-primary btn-block active" role="button" aria-pressed="true">Visualizza prenotazioni odierne</a>
             <div class="testo4">
                 <p class="text-center">
                     Esegui un tampone-vaccino o visualizza le prenotazioni odierne
