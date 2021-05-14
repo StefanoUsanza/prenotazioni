@@ -7,7 +7,7 @@
                 <div class="navbar-brand">TAMPONANDO CON LE STELLE</div>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="pre-home_page_utente.php">HOME</a>
+                        <a class="nav-link" href="pre-home_page_operatore.php">HOME</a>
                     </li>
                 </ul>
             </nav>
@@ -16,8 +16,7 @@
             <div class="testo2">
                 <h3>
                     <p class="text-center font-weight-normal">
-                        numero massimo di prenotazioni giornaliere superato,
-                        seleziona un altro giorno o riprovare più tardi
+                        I dati inseriti non sono corretti, ricontrollali e riprova
                     </p>
                 </h3>
             </div>

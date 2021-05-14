@@ -21,7 +21,7 @@ $temp=null;
         $temp = $row['codice_prenotazione'];
     }
 if($temp==null)
-    echo $template->render('login_errato');
+    echo $template->render('annulla_errato');
 else{
     //query di inserimento preparata
     $sql = "UPDATE prenotazioni SET annullato=true where prenotazioni.codice_prenotazione= :codice

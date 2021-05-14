@@ -25,6 +25,7 @@
                 <tr>
                     <th scope="col" class="text-white text-center bg-transparent">Codice fiscale</th>
                     <th scope="col" class="text-white text-center bg-transparent">Codice prenotazione</th>
+                    <th scope="col" class="text-white text-center bg-transparent">tipologia</th>
                 </tr>
                 </thead>
                 <tbody style="background: #212F3D">
@@ -33,6 +34,7 @@
                 <tr>
                     <td class="text-white text-center bg-transparent"><strong><?php echo $row['codice_fiscale']?></strong></td>
                     <td class="text-white text-center bg-transparent"><strong><?php echo $row['codice_prenotazione']?></strong></td>
+                    <td class="text-white text-center bg-transparent"><strong><?php echo $row['tipologia']?></strong></td>
                 </tr>
                 <?php endforeach ?>
                 </tbody>
@@ -44,6 +46,8 @@
             </div>
         </div>
     </div>
+    <hr style="    border: 80px solid;
+    color: transparent;">
     <footer class="text-muted bg-transparent">
         <p class="text-left" style="color:#ffffff">© 2021 TAMPONANDO CON LE STELLE. All Rights Reserved.
         </p>

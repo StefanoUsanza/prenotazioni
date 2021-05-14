@@ -8,7 +8,7 @@ use League\Plates\Engine;
 $template = new Engine('./view', 'tpl');
 //controllo codice vuoto
 if($_POST['codice']==null || $_POST['codice_fiscale']==null){
-    echo $template->render('login_errato');
+    echo $template->render('errore_operazione');
 }
 else {
     $codice_fiscale = $_POST['codice_fiscale'];
@@ -25,7 +25,7 @@ else {
     }
     //controllo validità dei dati
     if ($temp == null) {
-        echo $template->render('login_errato');
+        echo $template->render('errore_operazione');
     } else {
         //query di inserimento preparata
         $sql = "UPDATE prenotazioni SET eseguito=true, prenotazioni.note= :note where prenotazioni.codice_prenotazione= :codice";

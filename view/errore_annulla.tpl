@@ -16,8 +16,7 @@
             <div class="testo2">
                 <h3>
                     <p class="text-center font-weight-normal">
-                        numero massimo di prenotazioni giornaliere superato,
-                        seleziona un altro giorno o riprovare più tardi
+                        I dati inseriti non sono corretti, ricontrollali e riprova
                     </p>
                 </h3>
             </div>

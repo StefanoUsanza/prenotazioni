@@ -39,13 +39,14 @@ $codice_prenotazione = random_str();
 
 //controllo numero massimo di prenotazioni nel giorno dato
 $stmt = $pdo->query("select count(*) as n_prenotazioni from prenotazioni
-where giorno='$giorno' and annullato=0");
+where giorno='$giorno'");
 
 $n_prenotazioni=0;
 
 while($row =$stmt->fetch(PDO::FETCH_ASSOC)){
     $n_prenotazioni = $row['n_prenotazioni'];
 }
+
 if($giorno==null){
     echo $template->render('errore_prenota');
 }
@@ -54,7 +55,7 @@ else if($n_prenotazioni>=$prenotazioni_max) {
 }
 else {
 //query di inserimento preparata
-    $sql = "INSERT INTO prenotazioni VALUES (null, :codice_fiscale, :giorno, :codice_prenotazione, '0', null, '0','tampone')";
+    $sql = "INSERT INTO prenotazioni VALUES (null, :codice_fiscale, :giorno, :codice_prenotazione, '0', null, '0','vaccino')";
 
 //invio query al DB che la tiene in memoria
     $stm = $pdo->prepare($sql);

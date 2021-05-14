@@ -1,5 +1,29 @@
 <?php $this->layout('main') ?>
 
-<p> login errato</p>
-
-<a href="index.php">home page</a>
+<div class="container-fluid banner">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-md">
+                <div class="navbar-brand">TAMPONANDO CON LE STELLE</div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">HOME</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-8 offset-md-2 info">
+            <div class="testo2">
+                <h3>
+                    <p class="text-center font-weight-normal">
+                        Le credenziali inserite non sono valide o sono scadute
+                    </p>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <footer class="text-muted bg-transparent">
+        <p class="text-left" style="color:#ffffff">© 2021 TAMPONANDO CON LE STELLE. All Rights Reserved.
+        </p>
+    </footer>
+</div>

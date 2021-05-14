@@ -27,6 +27,8 @@
             </div>
         </div>
     </div>
+    <hr style="    border: 100px solid;
+    color: transparent;">
     <footer class="text-muted bg-transparent">
         <p class="text-left" style="color:#ffffff">© 2021 TAMPONANDO CON LE STELLE. All Rights Reserved.
         </p>
