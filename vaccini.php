@@ -47,7 +47,10 @@ while($row =$stmt->fetch(PDO::FETCH_ASSOC)){
     $n_prenotazioni = $row['n_prenotazioni'];
 }
 
-if($n_prenotazioni>=$prenotazioni_max) {
+if($giorno==null){
+    echo $template->render('errore_prenota');
+}
+else if($n_prenotazioni>=$prenotazioni_max) {
     echo $template->render('prenotazioni_max');
 }
 else {
