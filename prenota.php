@@ -39,15 +39,17 @@ $codice_prenotazione = random_str();
 
 //controllo numero massimo di prenotazioni nel giorno dato
 $stmt = $pdo->query("select count(*) as n_prenotazioni from prenotazioni
-where giorno='$giorno'");
+where giorno='$giorno' and annullato=0");
 
 $n_prenotazioni=0;
 
 while($row =$stmt->fetch(PDO::FETCH_ASSOC)){
     $n_prenotazioni = $row['n_prenotazioni'];
 }
-
-if($n_prenotazioni>=$prenotazioni_max) {
+if($giorno==null){
+    echo $template->render('errore_prenota');
+}
+else if($n_prenotazioni>=$prenotazioni_max) {
     echo $template->render('prenotazioni_max');
 }
 else {

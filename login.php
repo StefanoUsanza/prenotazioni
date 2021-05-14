@@ -34,9 +34,6 @@ else {
     }
     //verifica password errata
     else{
-        echo $username;
-        echo $password;
         echo $template->render('login_errato');
     }
-
 }

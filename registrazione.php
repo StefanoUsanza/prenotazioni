@@ -12,44 +12,56 @@ $codice_fiscale = $_POST['codice_fiscale'];
 $password = $_POST['password'];
 $cpassword = $_POST['cpassword'];
 
+if($username==null || $codice_fiscale==null || $password==null || $cpassword==null){
+    echo $template->render('errore_registrazione');
+}
+else {
 //controllo utente duplicato tramite il codice fiscale
-$stmt = $pdo->query("select codice_fiscale from utenti
-where codice_fiscale='$codice_fiscale'");
+    $stmt = $pdo->query("select codice_fiscale from utenti
+    where codice_fiscale='$codice_fiscale'");
 
-$newUtente=true;
+    $newUtente = true;
 
-while($row =$stmt->fetch(PDO::FETCH_ASSOC)){
-    if($row['codice_fiscale']!=null){
-        echo 'codice fiscale già registrato';
-        $newUtente=false;
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        if ($row['codice_fiscale'] != null) {
+            $newUtente = false;
+        }
     }
 
-    //utente già presente rinviare al modulo
-}
+    $stmt = $pdo->query("select username from utenti
+    where username='$username'");
 
-if($password!=$cpassword && $newUtente==true){
-    //password non corretta rinviare al modulo
-    echo 'password errata, ricontrollala e riprova';
-}
-//dati inseriti correttamente
-else if ($password==$cpassword && $newUtente==true){
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        if ($row['username'] != null) {
+            $newUtente = false;
+        }
+    }
 
-    $password = password_hash($password,PASSWORD_DEFAULT);
+    if ($password != $cpassword && $newUtente == true) {
+        //password non corretta rinviare al modulo
+        echo $template->render('errore_registrazione');
+    } //dati inseriti correttamente
+    else if ($password == $cpassword && $newUtente == true) {
 
-    //query di inserimento preparata
-    $sql = "INSERT INTO utenti VALUES (null, :username, :password, :codice_fiscale, 0)";
+        $password = password_hash($password, PASSWORD_DEFAULT);
 
-    //invio query al DB che la tiene in memoria
-    $stm = $pdo->prepare($sql);
+        //query di inserimento preparata
+        $sql = "INSERT INTO utenti VALUES (null, :username, :password, :codice_fiscale, 0)";
 
-    //invio dei dati per i segnaposto
-    $stm->execute(
-        [
-            'username' => $username,
-            'password' => $password,
-            'codice_fiscale' => $codice_fiscale
-        ]
-    );
-    //header('location:lista_prenotazioni.php');
-    echo $template->render('results_registrazione', ['username' => $username, 'password' => $password, 'codice_fiscale' => $codice_fiscale]);
+        //invio query al DB che la tiene in memoria
+        $stm = $pdo->prepare($sql);
+
+        //invio dei dati per i segnaposto
+        $stm->execute(
+            [
+                'username' => $username,
+                'password' => $password,
+                'codice_fiscale' => $codice_fiscale
+            ]
+        );
+        echo $template->render('results_registrazione', ['username' => $username, 'password' => $password, 'codice_fiscale' => $codice_fiscale]);
+    }
+    else if($newUtente==false){
+        echo $template->render('errore_registrazione');
+    }
 }
