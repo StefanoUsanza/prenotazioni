@@ -11,6 +11,5 @@ L'obiettivo di questa applicazione sarà quello di risolvere questo problema.
 - possibilità di vedere una lista contenente tutte le prenotazioni giornaliere;
 - controllo del numero massimo di persone che possono effettuare un tampone in un giorno;
 - possibilità di registrare un tampone eseguito;
-- grafico del numero di prenotazioni giornaliere in un intervallo scelto dall'operatore sanitario;
-- proposta di una data in cui prenotare un tampone con una data massima come limite ed evitando i giorni in cui il numero masssimo di prenotazioni è già stato raggiunto.
+- limitare ad un numero massimo di prenotazioni per un giorno.
 
